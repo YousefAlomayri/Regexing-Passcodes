@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regexing Passcodes</title>
+    <script src="regexingpasscodes.js" defer></script>
+    <style>
+.passcodebox{ background-color: aqua; border: 3px dashed black; 
+    max-width: 10cm; text-align: center; font-weight: bold;margin-left: 40%; 
+    font-size: large;}
+h1  {text-align: center;}
+h2  {text-align: center; border: 3px double aqua; max-width: 15cm;margin-left: 35%}
+.colRed{color: #9D2235;}
+#passcode{font-weight: bold; font-size: large;}
+    </style>
+</head>
+<body>
+    <h1> A PassCode should be:</h1> 
+    <h2> <span class="colRed">3=></span>(digits) <span class="colRed">4=></span>(lower case letters) <span class="colRed">1=></span>(digit)</h2>
+    <div class="passcodebox">
+<label for="passcode"> Enter Your passcode</label>
+
+<input type="text" id="passcode" maxlength="8" size="8" onfocusout="checkPasscode()">
+    
+    <div class="passcodeMessageBox"> </div>
+</div>
+</body>
+</html>
